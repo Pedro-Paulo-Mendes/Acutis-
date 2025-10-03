@@ -1,0 +1,113 @@
+:root {
+    --cor-fundo: #121212; /* fundo escuro */
+    --cor-texto: #D4AF37; /* dourado */
+    --cor-acento: #B91D29; /* vermelho suave para destaque */
+    --cor-botao: #D4AF37; /* dourado para botões */
+}
+
+body {
+    background-color: var(--cor-fundo); 
+    color: var(--cor-texto);
+    font-family: Arial, sans-serif;
+}
+
+.logo img {
+width: 120px;
+height: auto;
+
+}
+
+/* Logo */
+.logo {
+    color: var(--cor-texto);
+    margin-right: auto;
+
+}
+
+/* Estilizando o menu de navegação */
+header {
+    display: flex;
+    justify-content: space-between; /* Espaço entre o lado esquerdo e direito */
+    align-items: center; /* Alinha verticalmente */
+    padding: 10px;
+
+   
+}
+
+header .left {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+   
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 10px; /* Ajuste a margem se necessário */
+    
+}
+
+nav ul li {
+    margin-right: 10px; /* Mantém os itens mais próximos */
+}
+
+/* Estilizando os links do menu */
+nav ul li a {
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-size: 1.1em;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: var(--cor-acento);
+}
+
+/* As outras informações à direita */
+header .right {
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input[type="text"] {
+    padding: 10px;
+    background-color: #333;
+    color: var(--cor-texto);
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    margin-right: 10px; /* Aproxima mais o botão */
+}
+
+.search-button {
+    background-color: var(--cor-botao);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #B91D29;
+}
+
+/* Estilizando o menu responsivo */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Esconder links no menu em telas menores */
+    }
+
+    nav ul li i {
+        display: block;
+        font-size: 2em;
+        color: var(--cor-texto);
+    }
+}
