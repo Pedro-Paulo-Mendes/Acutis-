@@ -99,6 +99,69 @@ header .right {
     background-color: #B91D29;
 }
 
+/* MAIN */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px; 
+    padding: 0 80px; /* controla a distância das BORDAS */
+    margin-top: 80px
+}
+
+/* card individual */
+.geral {
+    display: grid;
+    grid-template-rows: 250px 1fr; 
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #121212;
+    box-shadow: 0 7px 10px rgba(118, 116, 116, 0.3); 
+    margin-top: 9px;
+}
+
+
+/* imagem */
+.foto img {
+    width: 101%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* área de texto */
+.texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 15px;
+    background: linear-gradient(180deg, #fff 70%, #f9f9f9);
+}
+
+/* nome */
+.nome {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #020202; 
+    margin-bottom: 4px;
+    margin-top: -2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.descricao {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #282626;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
 /* Estilizando o menu responsivo */
 @media (max-width: 768px) {
     nav ul {
