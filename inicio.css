@@ -113,18 +113,23 @@ header .right {
 /* card individual */
 .geral {
     display: grid;
-    grid-template-rows: 250px 1fr; 
+    grid-template-rows: 250px auto; 
     width: 350px;
-    height: 350px;
     border-radius: 10px;
     overflow: hidden;
     background-color: #121212;
     box-shadow: 0 7px 10px rgba(118, 116, 116, 0.3); 
     margin-top: 9px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.geral:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 16px rgba(209, 209, 209, 0.5);
+}
 
-/* imagem */
 .foto img {
     width: 101%;
     height: 100%;
@@ -132,7 +137,7 @@ header .right {
     display: block;
 }
 
-/* área de texto */
+
 .texto {
     display: flex;
     flex-direction: column;
