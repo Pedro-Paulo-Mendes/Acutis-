@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,8 +27,8 @@
 
        <div class="right">
          <div class="search">
-           <input type="text" placeholder="Buscar Santos...">
-             <button class="search-button">
+           <input type="text" id="busca" placeholder="Buscar Santos...">
+             <button class="search-button"  onclick="buscar()">
              <i class="fa fas fa-search  "></i>
              </button>
          </div>
@@ -40,7 +40,7 @@
 <main>
     <div class="container">
     <a href="" class="geral">
-        <div class="foto"><img src="../assets/Santa Rita.png" alt=""></div>
+        <div class="foto"  data-nomes="Rita,Santa Rita, Santa Rita de Cassia,Santa Rita de Cássia"><img src="../assets/Santa Rita.png" alt=""></div>
         <div class="texto">
             <div class="nome">Santa Rita de Cássia</div>
             <div class="descricao">Padroeira das causas impossíveis e dos problemas familiares.</div>
@@ -114,6 +114,7 @@
 
 </div>
 </main>
-    
+
+<script src="../js/acai.js"></script>
 </body>
 </html>

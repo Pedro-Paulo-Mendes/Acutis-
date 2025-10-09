@@ -187,6 +187,19 @@ header .right {
 }
 
 
+.destaque {
+    animation: destaqueCard 2s ease-out;
+    border: 3px solid var(--cor-botao); /* contorno */
+    box-shadow: 0 0 20px var(--cor-botao); /* sombra */
+    border-radius: 10px; /* mantém cantos arredondados */
+}
+
+@keyframes destaqueCard {
+    0% { transform: scale(1); box-shadow: 0 0 0 rgba(255,0,0,0); }
+    50% { transform: scale(1.05); box-shadow: 0 0 25px rgba(247, 243, 243, 0.7); }
+    100% { transform: scale(1); box-shadow: 0 0 0 rgba(255,0,0,0); }
+}
+
 /* Estilizando o menu responsivo */
 @media (max-width: 768px) {
     nav ul {
