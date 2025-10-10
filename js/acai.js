@@ -40,3 +40,11 @@ function buscar() {
         alert("Nome não encontrado");
     }
 }
+
+document.getElementById("busca").addEventListener("keypress",function(event)
+{
+    if (event.key==="Enter"){
+        event.preventDefault();
+        buscar();
+    }
+});
