@@ -30,9 +30,12 @@ header {
     justify-content: space-between; /* Espaço entre o lado esquerdo e direito */
     align-items: center; /* Alinha verticalmente */
     padding: 10px;
+    ;
 
    
 }
+
+
 
 header .left {
     display: flex;
