@@ -165,4 +165,6 @@ header .right {
     margin: auto;
     font-size: large;
     color: #ffda60;
+    margin-top: -50px;
+    margin-bottom: -50px;
 }
